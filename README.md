@@ -2,25 +2,21 @@
 Activation Function:
 Sigmoid:
 	Mathematical expression:f(z)=1/(1+e^z)
-	The sigmoid function is a nonlinear function used in regression model.
-	
+	The sigmoid function is a nonlinear function used in regression model.	
 	Sigmoid function converts its input into a probability between 0 and 1.
 	This function isn't used in hidden layers of a CNN. Since it gives a low gradient for values greater than 3 and less than -3, the network fails to learn and perform.
 	(Vanishing gradient problem)
 Tanh:
 	Mathematical expression:f(x)=a=tanh(z)=(e^x-e^(-x))/(e^x+e^(-x))
 	The tanh function is suited for the classification of two different classes.
-
 	Its range falls between -1 and 1, and it has fast optimization speed.
 ReLU:
 	Mathematical expression:f(z)=max(0.0, z)
 	ReLU is an alternative to both sigmoid and tanh activation functions, is one of the most widely activated in convolutional neural networks and deep learning. It doesn’t have a vanishing gradient problem unlike sigmoid and tanh.
-	
 	ReLU function performs faster calculations because it doesn't use exponential.
 Softmax:
 	Mathmatical expression:f(z)=(e^(z_i))/(sigma(e^(z_i)))
 	Softmax is a nonlinear function and it used to handle mulitiple classes.
-	
 	It adjusts its output for each class between 0 and 1, then divides them by their sum to determine the likelihood of the input value falling into a specific category of classes.
 	
 ![image](https://user-images.githubusercontent.com/107789113/197200789-25dad962-fc4d-4548-9496-62561ed99176.png)
